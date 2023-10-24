@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -208,18 +209,135 @@
             </objects>
             <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
         </scene>
+        <!--Ürünler-->
+        <scene sceneID="tB6-vy-dZs">
+            <objects>
+                <viewController id="8Xe-YR-yAf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D4E-QN-M0b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UUy-nB-pPi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ürünler" image="cart.fill.badge.plus" catalog="system" id="Z6P-Ac-wib"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WhE-Ni-T0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="-377"/>
+        </scene>
+        <!--Firmalar-->
+        <scene sceneID="sFZ-F2-5Bx">
+            <objects>
+                <tableViewController id="p7Z-KL-pcO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oPv-xd-amq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qYZ-e8-KvJ">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qYZ-e8-KvJ" id="Gv1-tG-13V">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="p7Z-KL-pcO" id="p7p-eG-t0p"/>
+                            <outlet property="delegate" destination="p7Z-KL-pcO" id="uua-xE-4L0"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Firmalar" image="person.line.dotted.person" catalog="system" id="9NP-at-BK3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Of-IS-V10" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="296"/>
+        </scene>
+        <!--Ayarlar-->
+        <scene sceneID="gXL-U5-MrZ">
+            <objects>
+                <tableViewController id="aqm-zM-yhD" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gC9-xn-c6u">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0zw-P4-Ygr">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0zw-P4-Ygr" id="ic7-dn-Kb0">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aqm-zM-yhD" id="BoD-Kp-8Ug"/>
+                            <outlet property="delegate" destination="aqm-zM-yhD" id="qBv-Al-bb3"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Ayarlar" image="gearshape" catalog="system" id="kOa-s2-Rbh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVI-At-xqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="975"/>
+        </scene>
+        <!--Kategoriler-->
+        <scene sceneID="f9L-Hy-pVM">
+            <objects>
+                <viewController id="Asf-6W-AAe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qoR-98-zSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IHs-4d-2dd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kategoriler" image="square.3.layers.3d.down.left" catalog="system" id="AHB-GV-YIg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnT-54-vd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="-1049"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IDU-u8-XPC">
+            <objects>
+                <tabBarController id="tO2-3j-wEp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1bU-KC-VTq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Asf-6W-AAe" kind="relationship" relationship="viewControllers" id="c77-xt-u0Z"/>
+                        <segue destination="8Xe-YR-yAf" kind="relationship" relationship="viewControllers" id="prs-JM-QSa"/>
+                        <segue destination="p7Z-KL-pcO" kind="relationship" relationship="viewControllers" id="kPj-h5-t8I"/>
+                        <segue destination="aqm-zM-yhD" kind="relationship" relationship="viewControllers" id="QMk-Bv-FQs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEM-1E-EDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="-35"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="250" height="250"/>
+        <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="logo" width="250" height="250"/>
+        <image name="person.line.dotted.person" catalog="system" width="128" height="59"/>
+        <image name="square.3.layers.3d.down.left" catalog="system" width="122" height="128"/>
         <namedColor name="backgroundColor">
             <color red="0.94548946619999996" green="0.94904404880000004" blue="0.95640557999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="customColor2">
             <color red="0.2199999988079071" green="0.71299999952316284" blue="0.99900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
