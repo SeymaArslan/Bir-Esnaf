@@ -36,11 +36,33 @@ class SettingsTableViewController: UITableViewController {
     
     //MARK: - IB Actions
     @IBAction func tellAFriendButton(_ sender: Any) {
-        print("Arkadaşlara Öner")
+        let textToShare = String(describing: "Bir Esnaf")
+        guard let appURLToShare = URL(string: "https://www.google.com"), let image = UIImage(named: "logo.png") else {   //  ********** URL olarak app url i vermeyi unutma
+            return
+        }
+        
+        let items = [textToShare, appURLToShare, image] as [Any]
+        let avc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        avc.excludedActivityTypes = [
+            UIActivity.ActivityType.airDrop,
+            UIActivity.ActivityType.print,
+            UIActivity.ActivityType.saveToCameraRoll,
+            UIActivity.ActivityType.addToReadingList
+        ]
+    
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if avc.responds(to: #selector(getter: UIViewController.popoverPresentationController)) {
+                avc.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
+            }
+        }
+        self.present(avc, animated: true, completion: nil)
     }
     
     @IBAction func termsAndCondButton(_ sender: Any) {
-        print("Şartlar ve koşullar")
+        let alert = UIAlertController(title: "Şartlar ve koşullar", message: "Linke gidiniz, Link: https://www.google.com", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func logOutButton(_ sender: Any) {
