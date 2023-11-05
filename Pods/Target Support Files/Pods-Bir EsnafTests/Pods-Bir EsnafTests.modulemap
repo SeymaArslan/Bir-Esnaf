@@ -1,0 +1,6 @@
+framework module Pods_Bir_EsnafTests {
+  umbrella header "Pods-Bir EsnafTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

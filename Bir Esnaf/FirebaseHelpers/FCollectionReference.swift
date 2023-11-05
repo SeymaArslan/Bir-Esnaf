@@ -13,6 +13,6 @@ enum FCollectionReference: String {
     case Recent
 }
 
-func FirebaseReference(_ collectionReference: String) -> CollectionReference {
+func FirebaseReference(_ collectionReference: FCollectionReference) -> CollectionReference {
     return Firestore.firestore().collection(collectionReference.rawValue)
 }

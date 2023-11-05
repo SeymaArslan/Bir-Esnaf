@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import ProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -50,31 +52,30 @@ class LoginViewController: UIViewController {
     //MARK: - IBActions
     @IBAction func loginButtonPressed(_ sender: Any) {
         if isDataInputedFor(type: isLogin ? "login" : "register") {
-            // login or register
-            print("have data for login/register")
+            isLogin ? loginUser() : registerUser()   // login or register func
         } else {
             // PogressHUD.showFiled("All fields are required")
-            print("Hata login")
+            print("Tüm alanları doldurun.")
         }
     }
     
     @IBAction func forgotPasswordButtonPressed(_ sender: Any) {
         if isDataInputedFor(type: "password") {
             // reset password
-            print("Have data for forgot pass")
+            resetPassword()
         } else {
             // PogressHUD.showFiled("Email is required.")
-            print("hata forgot pass")
+            ProgressHUD.failed("Email adresi gerekli")
         }
     }
     
     @IBAction func resendEmailButtonPressed(_ sender: Any) {
         if isDataInputedFor(type: "password") {
             // resend verification email
-            print("have data for resend email")
+            resendVerificationEmail()
         } else {
             // PogressHUD.showFiled("Email is required.")
-            print("hata resend mail")
+            ProgressHUD.failed("Email adresi gerekli")
         }
     }
     
@@ -141,6 +142,67 @@ class LoginViewController: UIViewController {
         default:
             return emailTextField.text != ""
         }
+    }
+    
+    private func loginUser() {
+        FirebaseUserListener.shared.loginUserWithEmail(email: emailTextField.text!, password: passwordTextField.text!) { error, isEmailVerified in
+            if error == nil {
+                if isEmailVerified {
+                    // go to app
+                    //self.goToApp()
+                    print("User has logged in with email ", User.currentUser?.email)
+                } else {
+                    ProgressHUD.error("Lütfen emailinizi doğrulayın.")
+                    self.resendEmailButtonOutlet.isHidden = false
+                }
+            } else {
+                ProgressHUD.error(error!.localizedDescription)
+            }
+        }
+    }
+    
+    private func registerUser() {
+        if passwordTextField.text! == repeatPasswordTextField.text! {
+            FirebaseUserListener.shared.registerUserWith(email: emailTextField.text!, password: passwordTextField.text!) { error in
+                if error == nil {
+                    ProgressHUD.success("Doğrulama için email adresinize gidin.")
+                    self.resendEmailButtonOutlet.isHidden = false
+                } else {
+                    ProgressHUD.error(error!.localizedDescription)
+                }
+            }
+        } else {
+            ProgressHUD.error("Parolalar Eşleşmiyor!")
+        }
+    }
+    
+    private func resetPassword() {
+        FirebaseUserListener.shared.resetPasswordFor(email: emailTextField.text!) { error in
+            if error == nil {
+                ProgressHUD.success("Sıfırlama maili gönderildi.")
+            } else {
+                ProgressHUD.error(error!.localizedDescription)
+            }
+        }
+    }
+    
+    private func resendVerificationEmail() {
+        FirebaseUserListener.shared.resendVerificationEmail(email: emailTextField.text!) { error in
+            if error == nil {
+                ProgressHUD.success("Yeni doğrulama emaili gönderildi.")
+            } else {
+                ProgressHUD.error("Lütfen daha sonra tekrar deneyin, hata \(error!.localizedDescription)")
+                print(error!.localizedDescription)
+            }
+        }
+    }
+    
+    //MARK: - Navigation
+    private func goToApp() {
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainView") as! UITabBarController
+        
+        mainView.modalPresentationStyle = .fullScreen
+        self.present(mainView, animated: true, completion: nil)
     }
     
 }

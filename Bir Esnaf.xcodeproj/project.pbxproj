@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		128538602AF38F1700A45783 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285385F2AF38F1700A45783 /* SettingsTableViewController.swift */; };
+		128E395B2AE9901F004D923C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 128E395A2AE9901E004D923C /* GoogleService-Info.plist */; };
+		128E395D2AE9948D004D923C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E395C2AE9948D004D923C /* User.swift */; };
+		128E39632AE997F1004D923C /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E39622AE997F1004D923C /* FirebaseUserListener.swift */; };
+		12A4611E2AEA59F600FE6CE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4611D2AEA59F600FE6CE8 /* Constants.swift */; };
 		12B46D3C2AC462B100A61184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B46D3B2AC462B100A61184 /* AppDelegate.swift */; };
 		12B46D3E2AC462B100A61184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B46D3D2AC462B100A61184 /* SceneDelegate.swift */; };
 		12B46D402AC462B100A61184 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B46D3F2AC462B100A61184 /* LoginViewController.swift */; };
@@ -16,6 +21,11 @@
 		12B46D532AC462B300A61184 /* Bir_EsnafTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B46D522AC462B300A61184 /* Bir_EsnafTests.swift */; };
 		12B46D5D2AC462B300A61184 /* Bir_EsnafUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B46D5C2AC462B300A61184 /* Bir_EsnafUITests.swift */; };
 		12B46D5F2AC462B300A61184 /* Bir_EsnafUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B46D5E2AC462B300A61184 /* Bir_EsnafUITestsLaunchTests.swift */; };
+		12F8A4512AF18C2900022420 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F8A4502AF18C2900022420 /* FCollectionReference.swift */; };
+		12F8A4562AF192B300022420 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 12F8A4552AF192B300022420 /* ProgressHUD */; };
+		824893E5A42E4FE59390EE5A /* Pods_Bir_Esnaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D99D4CAE61612A082D20725 /* Pods_Bir_Esnaf.framework */; };
+		E1E2BEC3886EF9FB605B2BDD /* Pods_Bir_Esnaf_Bir_EsnafUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB5514F76912CA5FDF1FD5A /* Pods_Bir_Esnaf_Bir_EsnafUITests.framework */; };
+		E81A5CB506D8EF53487B66F3 /* Pods_Bir_EsnafTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0676AD526EEAAC18E1DA6070 /* Pods_Bir_EsnafTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0449A1A5841F9D392CA45DA3 /* Pods-Bir Esnaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf.release.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf/Pods-Bir Esnaf.release.xcconfig"; sourceTree = "<group>"; };
+		0676AD526EEAAC18E1DA6070 /* Pods_Bir_EsnafTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_EsnafTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D99D4CAE61612A082D20725 /* Pods_Bir_Esnaf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_Esnaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1285385F2AF38F1700A45783 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		128E395A2AE9901E004D923C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		128E395C2AE9948D004D923C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		128E39622AE997F1004D923C /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
+		12A4611D2AEA59F600FE6CE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		12B46D382AC462B100A61184 /* Bir Esnaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bir Esnaf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B46D3B2AC462B100A61184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12B46D3D2AC462B100A61184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,13 @@
 		12B46D582AC462B300A61184 /* Bir EsnafUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bir EsnafUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B46D5C2AC462B300A61184 /* Bir_EsnafUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bir_EsnafUITests.swift; sourceTree = "<group>"; };
 		12B46D5E2AC462B300A61184 /* Bir_EsnafUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bir_EsnafUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		12F8A4502AF18C2900022420 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		214BF27785371C4999241E74 /* Pods-Bir Esnaf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf.debug.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf/Pods-Bir Esnaf.debug.xcconfig"; sourceTree = "<group>"; };
+		35F7276FADEE32F9FFE80D70 /* Pods-Bir EsnafTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir EsnafTests.debug.xcconfig"; path = "Target Support Files/Pods-Bir EsnafTests/Pods-Bir EsnafTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB5514F76912CA5FDF1FD5A /* Pods_Bir_Esnaf_Bir_EsnafUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_Esnaf_Bir_EsnafUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B941031949C1302B5E1A55 /* Pods-Bir Esnaf-Bir EsnafUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf-Bir EsnafUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf-Bir EsnafUITests/Pods-Bir Esnaf-Bir EsnafUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA52477F7EBAC7F59B1DF290 /* Pods-Bir EsnafTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir EsnafTests.release.xcconfig"; path = "Target Support Files/Pods-Bir EsnafTests/Pods-Bir EsnafTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF2D9FF25EBB836E970B2E44 /* Pods-Bir Esnaf-Bir EsnafUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf-Bir EsnafUITests.release.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf-Bir EsnafUITests/Pods-Bir Esnaf-Bir EsnafUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824893E5A42E4FE59390EE5A /* Pods_Bir_Esnaf.framework in Frameworks */,
+				12F8A4562AF192B300022420 /* ProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81A5CB506D8EF53487B66F3 /* Pods_Bir_EsnafTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E2BEC3886EF9FB605B2BDD /* Pods_Bir_Esnaf_Bir_EsnafUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D6F0C97D6956A545DCCFD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				214BF27785371C4999241E74 /* Pods-Bir Esnaf.debug.xcconfig */,
+				0449A1A5841F9D392CA45DA3 /* Pods-Bir Esnaf.release.xcconfig */,
+				97B941031949C1302B5E1A55 /* Pods-Bir Esnaf-Bir EsnafUITests.debug.xcconfig */,
+				FF2D9FF25EBB836E970B2E44 /* Pods-Bir Esnaf-Bir EsnafUITests.release.xcconfig */,
+				35F7276FADEE32F9FFE80D70 /* Pods-Bir EsnafTests.debug.xcconfig */,
+				EA52477F7EBAC7F59B1DF290 /* Pods-Bir EsnafTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		011B5137C04AFE0EE8051FD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D99D4CAE61612A082D20725 /* Pods_Bir_Esnaf.framework */,
+				7FB5514F76912CA5FDF1FD5A /* Pods_Bir_Esnaf_Bir_EsnafUITests.framework */,
+				0676AD526EEAAC18E1DA6070 /* Pods_Bir_EsnafTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		128E395E2AE99492004D923C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				128E395C2AE9948D004D923C /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		128E395F2AE994AA004D923C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12B46D3F2AC462B100A61184 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		128E39602AE994D8004D923C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		128E39612AE994F1004D923C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		12B46D2F2AC462B100A61184 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +165,8 @@
 				12B46D512AC462B300A61184 /* Bir EsnafTests */,
 				12B46D5B2AC462B300A61184 /* Bir EsnafUITests */,
 				12B46D392AC462B100A61184 /* Products */,
+				00D6F0C97D6956A545DCCFD5 /* Pods */,
+				011B5137C04AFE0EE8051FD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +183,20 @@
 		12B46D3A2AC462B100A61184 /* Bir Esnaf */ = {
 			isa = PBXGroup;
 			children = (
+				128E39612AE994F1004D923C /* Service */,
 				12B46D3B2AC462B100A61184 /* AppDelegate.swift */,
 				12B46D3D2AC462B100A61184 /* SceneDelegate.swift */,
-				12B46D3F2AC462B100A61184 /* LoginViewController.swift */,
+				12F8A4522AF18E6500022420 /* FirebaseHelpers */,
+				128E395E2AE99492004D923C /* Model */,
+				128E39602AE994D8004D923C /* ViewModel */,
+				128E395F2AE994AA004D923C /* View */,
 				12B46D412AC462B100A61184 /* Main.storyboard */,
 				12B46D442AC462B300A61184 /* Assets.xcassets */,
 				12B46D462AC462B300A61184 /* LaunchScreen.storyboard */,
 				12B46D492AC462B300A61184 /* Info.plist */,
+				128E395A2AE9901E004D923C /* GoogleService-Info.plist */,
+				12A4611D2AEA59F600FE6CE8 /* Constants.swift */,
+				1285385F2AF38F1700A45783 /* SettingsTableViewController.swift */,
 			);
 			path = "Bir Esnaf";
 			sourceTree = "<group>";
@@ -127,6 +218,15 @@
 			path = "Bir EsnafUITests";
 			sourceTree = "<group>";
 		};
+		12F8A4522AF18E6500022420 /* FirebaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				128E39622AE997F1004D923C /* FirebaseUserListener.swift */,
+				12F8A4502AF18C2900022420 /* FCollectionReference.swift */,
+			);
+			path = FirebaseHelpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +234,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12B46D622AC462B300A61184 /* Build configuration list for PBXNativeTarget "Bir Esnaf" */;
 			buildPhases = (
+				7F39FB7BA58AA2B108E54D4F /* [CP] Check Pods Manifest.lock */,
 				12B46D342AC462B100A61184 /* Sources */,
 				12B46D352AC462B100A61184 /* Frameworks */,
 				12B46D362AC462B100A61184 /* Resources */,
+				988F0033A3A45FA7EC356ACD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Bir Esnaf";
+			packageProductDependencies = (
+				12F8A4552AF192B300022420 /* ProgressHUD */,
+			);
 			productName = "Bir Esnaf";
 			productReference = 12B46D382AC462B100A61184 /* Bir Esnaf.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12B46D652AC462B300A61184 /* Build configuration list for PBXNativeTarget "Bir EsnafTests" */;
 			buildPhases = (
+				C45D82020C8D7FCDBAC02F1D /* [CP] Check Pods Manifest.lock */,
 				12B46D4A2AC462B300A61184 /* Sources */,
 				12B46D4B2AC462B300A61184 /* Frameworks */,
 				12B46D4C2AC462B300A61184 /* Resources */,
@@ -169,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12B46D682AC462B300A61184 /* Build configuration list for PBXNativeTarget "Bir EsnafUITests" */;
 			buildPhases = (
+				14E8383374362D87D8A88A08 /* [CP] Check Pods Manifest.lock */,
 				12B46D542AC462B300A61184 /* Sources */,
 				12B46D552AC462B300A61184 /* Frameworks */,
 				12B46D562AC462B300A61184 /* Resources */,
+				0510D176BDBE96024715792E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +323,9 @@
 				Base,
 			);
 			mainGroup = 12B46D2F2AC462B100A61184;
+			packageReferences = (
+				12F8A4542AF192B300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+			);
 			productRefGroup = 12B46D392AC462B100A61184 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12B46D482AC462B300A61184 /* LaunchScreen.storyboard in Resources */,
+				128E395B2AE9901F004D923C /* GoogleService-Info.plist in Resources */,
 				12B46D452AC462B300A61184 /* Assets.xcassets in Resources */,
 				12B46D432AC462B100A61184 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +365,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0510D176BDBE96024715792E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf-Bir EsnafUITests/Pods-Bir Esnaf-Bir EsnafUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf-Bir EsnafUITests/Pods-Bir Esnaf-Bir EsnafUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf-Bir EsnafUITests/Pods-Bir Esnaf-Bir EsnafUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14E8383374362D87D8A88A08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bir Esnaf-Bir EsnafUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F39FB7BA58AA2B108E54D4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bir Esnaf-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		988F0033A3A45FA7EC356ACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf/Pods-Bir Esnaf-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf/Pods-Bir Esnaf-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bir Esnaf/Pods-Bir Esnaf-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C45D82020C8D7FCDBAC02F1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bir EsnafTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12B46D342AC462B100A61184 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128E395D2AE9948D004D923C /* User.swift in Sources */,
 				12B46D402AC462B100A61184 /* LoginViewController.swift in Sources */,
 				12B46D3C2AC462B100A61184 /* AppDelegate.swift in Sources */,
 				12B46D3E2AC462B100A61184 /* SceneDelegate.swift in Sources */,
+				128538602AF38F1700A45783 /* SettingsTableViewController.swift in Sources */,
+				128E39632AE997F1004D923C /* FirebaseUserListener.swift in Sources */,
+				12F8A4512AF18C2900022420 /* FCollectionReference.swift in Sources */,
+				12A4611E2AEA59F600FE6CE8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +652,7 @@
 		};
 		12B46D632AC462B300A61184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214BF27785371C4999241E74 /* Pods-Bir Esnaf.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +681,7 @@
 		};
 		12B46D642AC462B300A61184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0449A1A5841F9D392CA45DA3 /* Pods-Bir Esnaf.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +710,7 @@
 		};
 		12B46D662AC462B300A61184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F7276FADEE32F9FFE80D70 /* Pods-Bir EsnafTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +731,7 @@
 		};
 		12B46D672AC462B300A61184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA52477F7EBAC7F59B1DF290 /* Pods-Bir EsnafTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +752,7 @@
 		};
 		12B46D692AC462B300A61184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B941031949C1302B5E1A55 /* Pods-Bir Esnaf-Bir EsnafUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +771,7 @@
 		};
 		12B46D6A2AC462B300A61184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2D9FF25EBB836E970B2E44 /* Pods-Bir Esnaf-Bir EsnafUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +828,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12F8A4542AF192B300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12F8A4552AF192B300022420 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12F8A4542AF192B300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12B46D302AC462B100A61184 /* Project object */;
 }
