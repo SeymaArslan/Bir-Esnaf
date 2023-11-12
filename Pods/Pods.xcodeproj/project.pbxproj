@@ -26451,6 +26451,7 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			packageReferences = (
 				12F8A4532AF1923300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				127C9A0A2AFD5F6F00123624 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 3F833F9DEC042F730CCD2F433C6A05C2 /* Products */;
 			projectDirPath = "";
@@ -31418,6 +31419,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		127C9A0A2AFD5F6F00123624 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
 		12F8A4532AF1923300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";

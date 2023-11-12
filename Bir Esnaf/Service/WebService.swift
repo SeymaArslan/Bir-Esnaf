@@ -16,18 +16,16 @@ enum CompanyError: Error {
 
 class WebService {
     
-    
-    func allCompanies(url: URL, completion: @escaping (Result<[Company]?,CompanyError>) -> () ) {
+    func allCompanies(url: URL, completion: @escaping (Result<[CompanyElement]?,CompanyError>) -> () ) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let _ = error {
-                print(error?.localizedDescription ?? "")
                 completion(.failure(CompanyError.badUrl))
             }
             guard let data = data, error == nil else {
                 return completion(.failure(CompanyError.noData))
             }
             
-            guard let companies = try? JSONDecoder().decode([Company].self, from: data) else {
+            guard let companies = try? JSONDecoder().decode([CompanyElement].self, from: data) else {
                 return completion(.failure(CompanyError.parsingError))
             }
             completion(.success(companies))

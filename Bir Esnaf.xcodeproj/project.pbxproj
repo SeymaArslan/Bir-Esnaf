@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123359092AFA5D890006F5CA /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123359082AFA5D890006F5CA /* Company.swift */; };
+		1233590B2AFA5E730006F5CA /* CompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233590A2AFA5E730006F5CA /* CompanyViewModel.swift */; };
+		124DFE532AFD0218007FEFEE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124DFE522AFD0218007FEFEE /* WebService.swift */; };
+		1274271D2B013E9E00E82BAA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1274271C2B013E9E00E82BAA /* RxCocoa */; };
+		127427252B013E9E00E82BAA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 127427242B013E9E00E82BAA /* RxSwift */; };
+		1280A3DD2AF7DCA3007BD23A /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280A3DC2AF7DCA3007BD23A /* CompanyTableViewCell.swift */; };
+		1280A3DF2AF7DCFE007BD23A /* CompaniesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280A3DE2AF7DCFE007BD23A /* CompaniesTableViewController.swift */; };
+		1280A3E22AF7DF39007BD23A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280A3E12AF7DF39007BD23A /* Extensions.swift */; };
 		128538602AF38F1700A45783 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285385F2AF38F1700A45783 /* SettingsTableViewController.swift */; };
 		128E395B2AE9901F004D923C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 128E395A2AE9901E004D923C /* GoogleService-Info.plist */; };
 		128E395D2AE9948D004D923C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E395C2AE9948D004D923C /* User.swift */; };
@@ -49,6 +57,12 @@
 		0449A1A5841F9D392CA45DA3 /* Pods-Bir Esnaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bir Esnaf.release.xcconfig"; path = "Target Support Files/Pods-Bir Esnaf/Pods-Bir Esnaf.release.xcconfig"; sourceTree = "<group>"; };
 		0676AD526EEAAC18E1DA6070 /* Pods_Bir_EsnafTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_EsnafTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D99D4CAE61612A082D20725 /* Pods_Bir_Esnaf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bir_Esnaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		123359082AFA5D890006F5CA /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		1233590A2AFA5E730006F5CA /* CompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewModel.swift; sourceTree = "<group>"; };
+		124DFE522AFD0218007FEFEE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1280A3DC2AF7DCA3007BD23A /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		1280A3DE2AF7DCFE007BD23A /* CompaniesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesTableViewController.swift; sourceTree = "<group>"; };
+		1280A3E12AF7DF39007BD23A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1285385F2AF38F1700A45783 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		128E395A2AE9901E004D923C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		128E395C2AE9948D004D923C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -81,7 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127427252B013E9E00E82BAA /* RxSwift in Frameworks */,
 				824893E5A42E4FE59390EE5A /* Pods_Bir_Esnaf.framework in Frameworks */,
+				1274271D2B013E9E00E82BAA /* RxCocoa in Frameworks */,
 				12F8A4562AF192B300022420 /* ProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,10 +144,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1280A3E02AF7DF19007BD23A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				12A4611D2AEA59F600FE6CE8 /* Constants.swift */,
+				1280A3E12AF7DF39007BD23A /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		128E395E2AE99492004D923C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				128E395C2AE9948D004D923C /* User.swift */,
+				123359082AFA5D890006F5CA /* Company.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				12B46D3F2AC462B100A61184 /* LoginViewController.swift */,
+				1285385F2AF38F1700A45783 /* SettingsTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +174,7 @@
 		128E39602AE994D8004D923C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1233590A2AFA5E730006F5CA /* CompanyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -154,6 +182,7 @@
 		128E39612AE994F1004D923C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				124DFE522AFD0218007FEFEE /* WebService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -183,9 +212,9 @@
 		12B46D3A2AC462B100A61184 /* Bir Esnaf */ = {
 			isa = PBXGroup;
 			children = (
-				128E39612AE994F1004D923C /* Service */,
 				12B46D3B2AC462B100A61184 /* AppDelegate.swift */,
 				12B46D3D2AC462B100A61184 /* SceneDelegate.swift */,
+				128E39612AE994F1004D923C /* Service */,
 				12F8A4522AF18E6500022420 /* FirebaseHelpers */,
 				128E395E2AE99492004D923C /* Model */,
 				128E39602AE994D8004D923C /* ViewModel */,
@@ -195,8 +224,9 @@
 				12B46D462AC462B300A61184 /* LaunchScreen.storyboard */,
 				12B46D492AC462B300A61184 /* Info.plist */,
 				128E395A2AE9901E004D923C /* GoogleService-Info.plist */,
-				12A4611D2AEA59F600FE6CE8 /* Constants.swift */,
-				1285385F2AF38F1700A45783 /* SettingsTableViewController.swift */,
+				1280A3E02AF7DF19007BD23A /* Helpers */,
+				1280A3DC2AF7DCA3007BD23A /* CompanyTableViewCell.swift */,
+				1280A3DE2AF7DCFE007BD23A /* CompaniesTableViewController.swift */,
 			);
 			path = "Bir Esnaf";
 			sourceTree = "<group>";
@@ -247,6 +277,8 @@
 			name = "Bir Esnaf";
 			packageProductDependencies = (
 				12F8A4552AF192B300022420 /* ProgressHUD */,
+				1274271C2B013E9E00E82BAA /* RxCocoa */,
+				127427242B013E9E00E82BAA /* RxSwift */,
 			);
 			productName = "Bir Esnaf";
 			productReference = 12B46D382AC462B100A61184 /* Bir Esnaf.app */;
@@ -325,6 +357,7 @@
 			mainGroup = 12B46D2F2AC462B100A61184;
 			packageReferences = (
 				12F8A4542AF192B300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				127C9A0B2AFD609500123624 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 12B46D392AC462B100A61184 /* Products */;
 			projectDirPath = "";
@@ -474,13 +507,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				128E395D2AE9948D004D923C /* User.swift in Sources */,
+				1280A3DF2AF7DCFE007BD23A /* CompaniesTableViewController.swift in Sources */,
 				12B46D402AC462B100A61184 /* LoginViewController.swift in Sources */,
 				12B46D3C2AC462B100A61184 /* AppDelegate.swift in Sources */,
+				1280A3DD2AF7DCA3007BD23A /* CompanyTableViewCell.swift in Sources */,
+				1233590B2AFA5E730006F5CA /* CompanyViewModel.swift in Sources */,
 				12B46D3E2AC462B100A61184 /* SceneDelegate.swift in Sources */,
 				128538602AF38F1700A45783 /* SettingsTableViewController.swift in Sources */,
 				128E39632AE997F1004D923C /* FirebaseUserListener.swift in Sources */,
 				12F8A4512AF18C2900022420 /* FCollectionReference.swift in Sources */,
+				124DFE532AFD0218007FEFEE /* WebService.swift in Sources */,
+				1280A3E22AF7DF39007BD23A /* Extensions.swift in Sources */,
 				12A4611E2AEA59F600FE6CE8 /* Constants.swift in Sources */,
+				123359092AFA5D890006F5CA /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +869,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		127C9A0B2AFD609500123624 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
 		12F8A4542AF192B300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
@@ -841,6 +888,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1274271C2B013E9E00E82BAA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 127C9A0B2AFD609500123624 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		127427242B013E9E00E82BAA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 127C9A0B2AFD609500123624 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		12F8A4552AF192B300022420 /* ProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 12F8A4542AF192B300022420 /* XCRemoteSwiftPackageReference "ProgressHUD" */;

@@ -151,6 +151,7 @@ class LoginViewController: UIViewController {
                     // go to app
                     //self.goToApp()
                     print("User has logged in with email ", User.currentUser?.email)
+                    // table view a giderken buradan bir true gönder. 
                 } else {
                     ProgressHUD.error("Lütfen emailinizi doğrulayın.")
                     self.resendEmailButtonOutlet.isHidden = false
